@@ -26,7 +26,7 @@ must use a slightly different import than our typical users.
 
 ```typescript
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { successStandardIcon } from '@cds/core/icon/shapes/success-standard.js';
+import { successStandardIcon } from '@cds/core/icon/shapes/success-standard';
 ```
 
 By importing the direct path, we bypass the `index .js` file to prevent
@@ -40,7 +40,7 @@ Once imported, we must register the icon within the Constructor of the component
 
 ```typescript
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { successStandardIcon } from '@cds/core/icon/shapes/success-standard.js';
+import { successStandardIcon } from '@cds/core/icon/shapes/success-standard';
 
 export class CdsMyComponent {
   constructor() {
