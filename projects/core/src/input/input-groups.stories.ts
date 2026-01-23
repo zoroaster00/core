@@ -9,7 +9,7 @@ import { state } from 'lit/decorators.js';
 import '@cds/core/input/register.js';
 import { registerElementSafely } from '@cds/core/internal';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { pencilIcon } from '@cds/core/icon/shapes/pencil.js';
+import { pencilIcon } from '@cds/core/icon/shapes/pencil';
 
 ClarityIcons.addIcons(pencilIcon);
 

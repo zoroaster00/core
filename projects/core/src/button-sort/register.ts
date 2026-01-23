@@ -6,7 +6,7 @@
 
 import { registerElementSafely } from '@cds/core/internal';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { angleIcon } from '@cds/core/icon/shapes/angle.js';
+import { angleIcon } from '@cds/core/icon/shapes/angle';
 import { CdsButtonSort } from './button-sort.element.js';
 import '@cds/core/icon/register.js';
 

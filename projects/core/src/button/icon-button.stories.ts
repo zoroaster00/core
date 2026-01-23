@@ -8,7 +8,7 @@ import '@cds/core/badge/register.js';
 import '@cds/core/button/register.js';
 import '@cds/core/icon/register.js';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { userIcon } from '@cds/core/icon/shapes/user.js';
+import { userIcon } from '@cds/core/icon/shapes/user';
 import { spreadProps, getElementStorybookArgs } from '@cds/core/internal';
 import { html } from 'lit';
 

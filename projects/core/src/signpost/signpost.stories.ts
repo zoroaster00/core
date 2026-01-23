@@ -17,7 +17,7 @@ import { CdsButton } from '@cds/core/button';
 import { CdsSignpost } from '@cds/core/signpost';
 import { CdsModal } from '@cds/core/modal';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { infoCircleIcon } from '@cds/core/icon/shapes/info-circle.js';
+import { infoCircleIcon } from '@cds/core/icon/shapes/info-circle';
 
 ClarityIcons.addIcons(infoCircleIcon);
 

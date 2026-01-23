@@ -6,9 +6,9 @@
 
 import '@cds/core/internal-components/close-button/register.js';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { angleIcon } from '@cds/core/icon/shapes/angle.js';
-import { timesCircleIcon } from '@cds/core/icon/shapes/times-circle.js';
-import { userIcon } from '@cds/core/icon/shapes/user.js';
+import { angleIcon } from '@cds/core/icon/shapes/angle';
+import { timesCircleIcon } from '@cds/core/icon/shapes/times-circle';
+import { userIcon } from '@cds/core/icon/shapes/user';
 import { spreadProps, getElementStorybookArgs } from '@cds/core/internal';
 import { html } from 'lit';
 

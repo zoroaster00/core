@@ -7,9 +7,9 @@
 import '@cds/core/button-action/register.js';
 import { html } from 'lit';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { timesIcon } from '@cds/core/icon/shapes/times.js';
-import { barsIcon } from '@cds/core/icon/shapes/bars.js';
-import { filterIcon } from '@cds/core/icon/shapes/filter.js';
+import { timesIcon } from '@cds/core/icon/shapes/times';
+import { barsIcon } from '@cds/core/icon/shapes/bars';
+import { filterIcon } from '@cds/core/icon/shapes/filter';
 
 ClarityIcons.addIcons(filterIcon, timesIcon, barsIcon);
 

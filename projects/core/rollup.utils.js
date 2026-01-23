@@ -169,11 +169,14 @@ export const createPackageModuleMetadata = (packageFile, config) => {
     ];
   });
 
-  const packageExports = config.package.exports.map(m =>
-    m.input
-      ? `"${makeJsonSafePath(m.input)}": "${makeJsonSafePath(m.output)}"`
-      : `"${makeJsonSafePath(m)}": "${makeJsonSafePath(m)}"`
-  );
+  const packageExports = config.package.exports.map(m => {
+    if (typeof m === 'string') {
+      return `"${makeJsonSafePath(m)}": "${makeJsonSafePath(m)}"`;
+    } else {
+      // if output is an object, encode it as a string and make it json safe
+      return `"${makeJsonSafePath(m.input)}": ${makeJsonSafePath(JSON.stringify(m.output))}`;
+    }
+  });
 
   const exports = JSON.parse(`{
      "./package.json": "./package.json",

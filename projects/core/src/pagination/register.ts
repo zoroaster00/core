@@ -10,8 +10,8 @@ import '@cds/core/input/register.js';
 import '@cds/core/select/register.js';
 import { registerElementSafely } from '@cds/core/internal';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { angleIcon } from '@cds/core/icon/shapes/angle.js';
-import { stepForward2Icon } from '@cds/core/icon/shapes/step-forward-2.js';
+import { angleIcon } from '@cds/core/icon/shapes/angle';
+import { stepForward2Icon } from '@cds/core/icon/shapes/step-forward-2';
 import { CdsPaginationButton } from './pagination-button.element.js';
 import { CdsPagination } from './pagination.element.js';
 

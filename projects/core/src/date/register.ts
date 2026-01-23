@@ -10,7 +10,7 @@ import '@cds/core/forms/register.js';
 import '@cds/core/button-action/register.js';
 import '@cds/core/icon/register.js';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { calendarIcon } from '@cds/core/icon/shapes/calendar.js';
+import { calendarIcon } from '@cds/core/icon/shapes/calendar';
 
 ClarityIcons.addIcons(calendarIcon);
 

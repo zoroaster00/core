@@ -7,10 +7,10 @@
 import '@cds/core/icon/register.js';
 import '@cds/core/progress-circle/register.js';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { homeIcon } from '@cds/core/icon/shapes/home.js';
-import { nodesIcon } from '@cds/core/icon/shapes/nodes.js';
-import { stopIcon } from '@cds/core/icon/shapes/stop.js';
-import { warningStandardIcon } from '@cds/core/icon/shapes/warning-standard.js';
+import { homeIcon } from '@cds/core/icon/shapes/home';
+import { nodesIcon } from '@cds/core/icon/shapes/nodes';
+import { stopIcon } from '@cds/core/icon/shapes/stop';
+import { warningStandardIcon } from '@cds/core/icon/shapes/warning-standard';
 import { spreadProps, getElementStorybookArgs } from '@cds/core/internal';
 import { html } from 'lit';
 

@@ -21,9 +21,9 @@ import '@cds/core/button/register.js';
 import '@cds/core/divider/register.js';
 import { html } from 'lit';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { cloudIcon } from '@cds/core/icon/shapes/cloud.js';
-import { plusIcon } from '@cds/core/icon/shapes/plus.js';
-import { infoCircleIcon } from '@cds/core/icon/shapes/info-circle.js';
+import { cloudIcon } from '@cds/core/icon/shapes/cloud';
+import { plusIcon } from '@cds/core/icon/shapes/plus';
+import { infoCircleIcon } from '@cds/core/icon/shapes/info-circle';
 
 ClarityIcons.addIcons(cloudIcon, infoCircleIcon, plusIcon);
 

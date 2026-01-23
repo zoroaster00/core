@@ -9,8 +9,8 @@ import '@cds/core/divider/register.js';
 import '@cds/core/forms/register.js';
 import { html } from 'lit';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { shareIcon } from '@cds/core/icon/shapes/share.js';
-import { thumbsUpIcon } from '@cds/core/icon/shapes/thumbs-up.js';
+import { shareIcon } from '@cds/core/icon/shapes/share';
+import { thumbsUpIcon } from '@cds/core/icon/shapes/thumbs-up';
 
 ClarityIcons.addIcons(shareIcon, thumbsUpIcon);
 

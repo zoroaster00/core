@@ -5,12 +5,12 @@
  */
 
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { checkCircleIcon } from '@cds/core/icon/shapes/check-circle.js';
-import { filterIcon } from '@cds/core/icon/shapes/filter.js';
-import { exclamationTriangleIcon } from '@cds/core/icon/shapes/exclamation-triangle.js';
-import { exclamationCircleIcon } from '@cds/core/icon/shapes/exclamation-circle.js';
-import { disconnectIcon } from '@cds/core/icon/shapes/disconnect.js';
-import { viewColumnsIcon } from '@cds/core/icon/shapes/view-columns.js';
+import { checkCircleIcon } from '@cds/core/icon/shapes/check-circle';
+import { filterIcon } from '@cds/core/icon/shapes/filter';
+import { exclamationTriangleIcon } from '@cds/core/icon/shapes/exclamation-triangle';
+import { exclamationCircleIcon } from '@cds/core/icon/shapes/exclamation-circle';
+import { disconnectIcon } from '@cds/core/icon/shapes/disconnect';
+import { viewColumnsIcon } from '@cds/core/icon/shapes/view-columns';
 
 ClarityIcons.addIcons(
   checkCircleIcon,

@@ -11,8 +11,8 @@ import '@cds/core/button/register.js';
 import '@cds/core/button-action/register.js';
 import '@cds/core/icon/register.js';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { folderIcon } from '@cds/core/icon/shapes/folder.js';
-import { timesIcon } from '@cds/core/icon/shapes/times.js';
+import { folderIcon } from '@cds/core/icon/shapes/folder';
+import { timesIcon } from '@cds/core/icon/shapes/times';
 
 ClarityIcons.addIcons(folderIcon, timesIcon);
 

@@ -5,7 +5,7 @@
  */
 
 import { testBundleSize, testRenderTime, html } from 'web-test-runner-performance/browser.js';
-import { ellipsisVerticalIcon } from '@cds/core/icon/shapes/ellipsis-vertical.js';
+import { ellipsisVerticalIcon } from '@cds/core/icon/shapes/ellipsis-vertical';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
 import '@cds/core/icon/register.js';
 

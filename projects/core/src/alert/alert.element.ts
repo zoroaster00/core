@@ -21,11 +21,11 @@ import {
 } from '@cds/core/internal';
 import { CdsIcon } from '@cds/core/icon/icon.element.js';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { infoStandardIcon } from '@cds/core/icon/shapes/info-standard.js';
-import { successStandardIcon } from '@cds/core/icon/shapes/success-standard.js';
-import { warningStandardIcon } from '@cds/core/icon/shapes/warning-standard.js';
-import { errorStandardIcon } from '@cds/core/icon/shapes/error-standard.js';
-import { helpIcon } from '@cds/core/icon/shapes/help.js';
+import { infoStandardIcon } from '@cds/core/icon/shapes/info-standard';
+import { successStandardIcon } from '@cds/core/icon/shapes/success-standard';
+import { warningStandardIcon } from '@cds/core/icon/shapes/warning-standard';
+import { errorStandardIcon } from '@cds/core/icon/shapes/error-standard';
+import { helpIcon } from '@cds/core/icon/shapes/help';
 import { AlertGroupTypes, AlertStatusTypes, AlertSizes } from './alert.interfaces.js';
 import { CdsAlertActions } from './alert-actions.element.js';
 import { CdsAlertGroup } from './alert-group.element.js';

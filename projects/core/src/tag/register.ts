@@ -6,7 +6,7 @@
 
 import { registerElementSafely } from '@cds/core/internal';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { timesIcon } from '@cds/core/icon/shapes/times.js';
+import { timesIcon } from '@cds/core/icon/shapes/times';
 import { CdsTag } from './tag.element.js';
 
 registerElementSafely('cds-tag', CdsTag);

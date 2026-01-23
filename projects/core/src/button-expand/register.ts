@@ -6,9 +6,9 @@
 
 import { registerElementSafely } from '@cds/core/internal';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { angleIcon } from '@cds/core/icon/shapes/angle.js';
-import { detailExpandIcon } from '@cds/core/icon/shapes/detail-expand.js';
-import { detailCollapseIcon } from '@cds/core/icon/shapes/detail-collapse.js';
+import { angleIcon } from '@cds/core/icon/shapes/angle';
+import { detailExpandIcon } from '@cds/core/icon/shapes/detail-expand';
+import { detailCollapseIcon } from '@cds/core/icon/shapes/detail-collapse';
 import { CdsButtonExpand } from './button-expand.element.js';
 import '@cds/core/icon/register.js';
 

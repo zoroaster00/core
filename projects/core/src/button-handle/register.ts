@@ -6,7 +6,7 @@
 
 import { registerElementSafely } from '@cds/core/internal';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { dragHandleIcon } from '@cds/core/icon/shapes/drag-handle.js';
+import { dragHandleIcon } from '@cds/core/icon/shapes/drag-handle';
 import { CdsButtonHandle } from './button-handle.element.js';
 import '@cds/core/icon/register.js';
 

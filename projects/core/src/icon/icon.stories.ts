@@ -7,12 +7,12 @@
 import '@cds/core/icon/register.js';
 import '@cds/core/button/register.js';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { imageIcon } from '@cds/core/icon/shapes/image.js';
-import { userIcon } from '@cds/core/icon/shapes/user.js';
+import { imageIcon } from '@cds/core/icon/shapes/image';
+import { userIcon } from '@cds/core/icon/shapes/user';
 
 import { html, LitElement } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
-import { homeIcon } from '@cds/core/icon/shapes/home.js';
+import { homeIcon } from '@cds/core/icon/shapes/home';
 import { baseStyles, spreadProps, getElementStorybookArgs, property } from '@cds/core/internal';
 
 // here for testing

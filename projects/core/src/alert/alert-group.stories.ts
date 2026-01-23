@@ -7,9 +7,9 @@
 import { spreadProps, getElementStorybookArgs } from '@cds/core/internal';
 import { html } from 'lit';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { headphonesIcon } from '@cds/core/icon/shapes/headphones.js';
-import { nodeGroupIcon } from '@cds/core/icon/shapes/node-group.js';
-import { timesCircleIcon } from '@cds/core/icon/shapes/times-circle.js';
+import { headphonesIcon } from '@cds/core/icon/shapes/headphones';
+import { nodeGroupIcon } from '@cds/core/icon/shapes/node-group';
+import { timesCircleIcon } from '@cds/core/icon/shapes/times-circle';
 
 ClarityIcons.addIcons(headphonesIcon, nodeGroupIcon, timesCircleIcon);
 

@@ -21,8 +21,8 @@ import { CdsNavigationStart, CdsNavigationStartTagName } from './navigation-star
 import { CdsNavigationItem, CdsNavigationItemTagName } from './navigation-item.element.js';
 
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { angleIcon } from '@cds/core/icon/shapes/angle.js';
-import { angleDoubleIcon } from '@cds/core/icon/shapes/angle-double.js';
+import { angleIcon } from '@cds/core/icon/shapes/angle';
+import { angleDoubleIcon } from '@cds/core/icon/shapes/angle-double';
 
 ClarityIcons.addIcons(angleIcon);
 ClarityIcons.addIcons(angleDoubleIcon);

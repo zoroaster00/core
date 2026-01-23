@@ -7,7 +7,7 @@
 import { html } from 'lit';
 import { spreadProps, getElementStorybookArgs } from '@cds/core/internal';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { vmIcon } from '@cds/core/icon/shapes/vm.js';
+import { vmIcon } from '@cds/core/icon/shapes/vm';
 import '@cds/core/selection-panels/radio/register.js';
 
 ClarityIcons.addIcons(vmIcon);

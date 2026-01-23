@@ -7,10 +7,10 @@
 import { html, TemplateResult } from 'lit';
 import { default as tokenData } from '@cds/core/tokens/tokens.json';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { homeIcon } from '@cds/core/icon/shapes/home.js';
-import { plusIcon } from '@cds/core/icon/shapes/plus.js';
-import { trashIcon } from '@cds/core/icon/shapes/trash.js';
-import { downloadIcon } from '@cds/core/icon/shapes/download.js';
+import { homeIcon } from '@cds/core/icon/shapes/home';
+import { plusIcon } from '@cds/core/icon/shapes/plus';
+import { trashIcon } from '@cds/core/icon/shapes/trash';
+import { downloadIcon } from '@cds/core/icon/shapes/download';
 import { hslToRgb, rgbToHex } from '@cds/core/internal';
 
 import '@cds/core/navigation/register.js';

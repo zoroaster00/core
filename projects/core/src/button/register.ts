@@ -10,8 +10,8 @@ import { registerElementSafely } from '@cds/core/internal';
 import { CdsButton } from './button.element.js';
 import { CdsIconButton } from './icon-button.element.js';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { errorStandardIcon } from '@cds/core/icon/shapes/error-standard.js';
-import { checkIcon } from '@cds/core/icon/shapes/check.js';
+import { errorStandardIcon } from '@cds/core/icon/shapes/error-standard';
+import { checkIcon } from '@cds/core/icon/shapes/check';
 
 ClarityIcons.addIcons(errorStandardIcon, checkIcon);
 

@@ -10,7 +10,7 @@ import '@cds/core/forms/register.js';
 import '@cds/core/button-action/register.js';
 import '@cds/core/icon/register.js';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { clockIcon } from '@cds/core/icon/shapes/clock.js';
+import { clockIcon } from '@cds/core/icon/shapes/clock';
 
 ClarityIcons.addIcons(clockIcon);
 

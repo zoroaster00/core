@@ -6,8 +6,8 @@
 
 import { registerElementSafely } from '@cds/core/internal';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { ellipsisVerticalIcon } from '@cds/core/icon/shapes/ellipsis-vertical.js';
-import { timesIcon } from '@cds/core/icon/shapes/times.js';
+import { ellipsisVerticalIcon } from '@cds/core/icon/shapes/ellipsis-vertical';
+import { timesIcon } from '@cds/core/icon/shapes/times';
 import { CdsButtonAction } from './button-action.element.js';
 import '@cds/core/icon/register.js';
 

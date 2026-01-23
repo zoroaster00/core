@@ -8,7 +8,7 @@ import { html, LitElement } from 'lit';
 import { queryAll } from 'lit/decorators.js';
 import { customElement, getInputValueType, state } from '@cds/core/internal';
 import { DemoGridCell, DemoService, exportElementsToCSV, parseCSV } from '@cds/core/demo';
-import { pencilIcon } from '@cds/core/icon/shapes/pencil.js';
+import { pencilIcon } from '@cds/core/icon/shapes/pencil';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
 import { CdsGridCell, CdsGridColumn, CdsGridRow } from '@cds/core/grid';
 import '@cds/core/file/register.js';

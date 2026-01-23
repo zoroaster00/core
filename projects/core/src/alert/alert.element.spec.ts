@@ -8,7 +8,7 @@ import { html } from 'lit';
 import '@cds/core/alert/register.js';
 import '@cds/core/icon/register.js';
 import { CdsAlert, getIconStatusTuple, iconShapeIsAlertStatusType } from '@cds/core/alert';
-import { infoStandardIcon } from '@cds/core/icon/shapes/info-standard.js';
+import { infoStandardIcon } from '@cds/core/icon/shapes/info-standard';
 import {
   componentIsStable,
   createTestElement,

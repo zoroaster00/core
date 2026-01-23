@@ -10,11 +10,11 @@ import '@cds/core/icon/register.js';
 
 import { registerElementSafely } from '@cds/core/internal';
 import { ClarityIcons } from '@cds/core/icon/icon.service.js';
-import { filterIcon } from '@cds/core/icon/shapes/filter.js';
-import { viewColumnsIcon } from '@cds/core/icon/shapes/view-columns.js';
-import { timesIcon } from '@cds/core/icon/shapes/times.js';
-import { pinIcon } from '@cds/core/icon/shapes/pin.js';
-import { unpinIcon } from '@cds/core/icon/shapes/unpin.js';
+import { filterIcon } from '@cds/core/icon/shapes/filter';
+import { viewColumnsIcon } from '@cds/core/icon/shapes/view-columns';
+import { timesIcon } from '@cds/core/icon/shapes/times';
+import { pinIcon } from '@cds/core/icon/shapes/pin';
+import { unpinIcon } from '@cds/core/icon/shapes/unpin';
 
 import { CdsGrid } from './grid/grid.element.js';
 import { CdsGridRow } from './row/grid-row.element.js';
