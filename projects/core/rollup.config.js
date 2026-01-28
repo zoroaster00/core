@@ -53,10 +53,18 @@ const config = {
     exports: [
       { input: './styles/module.tokens.css', output: './styles/module.tokens.min.css' },
       {
+        input: './icon/shapes/*.js',
+        output: {
+          types: "./icon/shapes/*.d.ts",
+          default: "./icon/shapes/*.js",
+        },
+      },
+      {
         input: './icon/shapes/*',
         output: {
-          types: './icon/shapes/*.d.ts',
-          import: './icon/shapes/*.js',
+          types: "./icon/shapes/*.d.ts",
+          import: "./icon/shapes/*.js",
+          require: "./icon/shapes/*.js"
         },
       },
       './icon/icon.service.js',
