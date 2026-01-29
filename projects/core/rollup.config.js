@@ -55,16 +55,16 @@ const config = {
       {
         input: './icon/shapes/*.js',
         output: {
-          types: "./icon/shapes/*.d.ts",
-          default: "./icon/shapes/*.js",
+          types: './icon/shapes/*.d.ts',
+          default: './icon/shapes/*.js',
         },
       },
       {
         input: './icon/shapes/*',
         output: {
-          types: "./icon/shapes/*.d.ts",
-          import: "./icon/shapes/*.js",
-          require: "./icon/shapes/*.js"
+          types: './icon/shapes/*.d.ts',
+          import: './icon/shapes/*.js',
+          require: './icon/shapes/*.js',
         },
       },
       './icon/icon.service.js',
