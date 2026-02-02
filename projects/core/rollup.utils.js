@@ -26,7 +26,7 @@ function makeJsonSafePath(key) {
   return key.replace(/\\/g, '/');
 }
 
-function resolveModuleExport(config, module) {
+function resolveModuleExport(config, module, defaultExportOnly = false) {
   const path = `.${resolve(module).replace(resolve(config.baseDir), '').replace('.ts', '.js')}`;
 
   if (path.includes('index.js')) {
@@ -34,10 +34,11 @@ function resolveModuleExport(config, module) {
 
     return [`".${parsedPath ? '/' : ''}${parsedPath}" : "${makeJsonSafePath(path)}"`];
   } else {
-    return [
-      `"${makeJsonSafePath(path)}": "${makeJsonSafePath(path)}"`,
-      `"${makeJsonSafePath(path.replace('.js', ''))}": "${makeJsonSafePath(path)}"`,
-    ];
+    const exports = [`"${makeJsonSafePath(path)}": "${makeJsonSafePath(path)}"`]
+    if (!defaultExportOnly) {
+      exports.push(`"${makeJsonSafePath(path.replace('.js', ''))}": "${makeJsonSafePath(path)}"`);
+    }
+    return exports;
   }
 }
 
@@ -171,7 +172,7 @@ export const createPackageModuleMetadata = (packageFile, config) => {
     ];
   });
 
-  const iconShapesExports = glob.sync(config.iconShapes).flatMap(m => resolveModuleExport(config, m));
+  const iconShapesExports = glob.sync(config.iconShapes).flatMap(m => resolveModuleExport(config, m, true));
 
   const packageExports = config.package.exports.map(m => {
     if (typeof m === 'string') {
