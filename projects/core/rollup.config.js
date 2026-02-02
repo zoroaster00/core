@@ -38,6 +38,7 @@ const config = {
     entryPoints: ['./src/**/index.ts', './src/**/register.ts'],
     sideEffects: ['./src/**/register.ts', './src/polyfills/*.ts'],
   },
+  iconShapes: './src/icon/shapes/**.ts',
   styles: [
     { input: './src/styles/global.scss', output: './dist/lib/global.css' },
     './src/styles/module.layout.scss',
@@ -52,21 +53,6 @@ const config = {
   package: {
     exports: [
       { input: './styles/module.tokens.css', output: './styles/module.tokens.min.css' },
-      {
-        input: './icon/shapes/*.js',
-        output: {
-          types: './icon/shapes/*.d.ts',
-          default: './icon/shapes/*.js',
-        },
-      },
-      {
-        input: './icon/shapes/*',
-        output: {
-          types: './icon/shapes/*.d.ts',
-          import: './icon/shapes/*.js',
-          require: './icon/shapes/*.js',
-        },
-      },
       './icon/icon.service.js',
       './tokens/tokens.js',
       './tokens/tokens.d.ts',
