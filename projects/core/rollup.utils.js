@@ -34,7 +34,7 @@ function resolveModuleExport(config, module, defaultExportOnly = false) {
 
     return [`".${parsedPath ? '/' : ''}${parsedPath}" : "${makeJsonSafePath(path)}"`];
   } else {
-    const exports = [`"${makeJsonSafePath(path)}": "${makeJsonSafePath(path)}"`]
+    const exports = [`"${makeJsonSafePath(path)}": "${makeJsonSafePath(path)}"`];
     if (!defaultExportOnly) {
       exports.push(`"${makeJsonSafePath(path.replace('.js', ''))}": "${makeJsonSafePath(path)}"`);
     }
