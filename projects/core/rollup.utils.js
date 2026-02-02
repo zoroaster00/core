@@ -26,6 +26,21 @@ function makeJsonSafePath(key) {
   return key.replace(/\\/g, '/');
 }
 
+function resolveModuleExport(config, module) {
+  const path = `.${resolve(module).replace(resolve(config.baseDir), '').replace('.ts', '.js')}`;
+
+  if (path.includes('index.js')) {
+    const parsedPath = makeJsonSafePath(resolve(dirname(module)).replace(resolve(config.baseDir), '')).replace('/', '');
+
+    return [`".${parsedPath ? '/' : ''}${parsedPath}" : "${makeJsonSafePath(path)}"`];
+  } else {
+    return [
+      `"${makeJsonSafePath(path)}": "${makeJsonSafePath(path)}"`,
+      `"${makeJsonSafePath(path.replace('.js', ''))}": "${makeJsonSafePath(path)}"`,
+    ];
+  }
+}
+
 /**
  * Rollup plugin for running the package-check validation
  * https://docs.skypack.dev/package-authors/package-checks
@@ -142,20 +157,7 @@ export const createPackageModuleMetadata = (packageFile, config) => {
 
   const moduleExports = config.modules.entryPoints
     .flatMap(i => glob.sync(i))
-    .flatMap(m => {
-      const path = `.${resolve(m).replace(resolve(config.baseDir), '').replace('.ts', '.js')}`;
-
-      if (path.includes('index.js')) {
-        const parsedPath = makeJsonSafePath(resolve(dirname(m)).replace(resolve(config.baseDir), '')).replace('/', '');
-
-        return [`".${parsedPath ? '/' : ''}${parsedPath}" : "${makeJsonSafePath(path)}"`];
-      } else {
-        return [
-          `"${makeJsonSafePath(path)}": "${makeJsonSafePath(path)}"`,
-          `"${makeJsonSafePath(path.replace('.js', ''))}": "${makeJsonSafePath(path)}"`,
-        ];
-      }
-    });
+    .flatMap(m => resolveModuleExport(config, m));
 
   const styleExports = config.styles.flatMap(m => {
     const output = typeof m === 'string' ? m : m.output;
@@ -169,6 +171,8 @@ export const createPackageModuleMetadata = (packageFile, config) => {
     ];
   });
 
+  const iconShapesExports = glob.sync(config.iconShapes).flatMap(m => resolveModuleExport(config, m));
+
   const packageExports = config.package.exports.map(m => {
     if (typeof m === 'string') {
       return `"${makeJsonSafePath(m)}": "${makeJsonSafePath(m)}"`;
@@ -181,7 +185,7 @@ export const createPackageModuleMetadata = (packageFile, config) => {
   const exports = JSON.parse(`{
      "./package.json": "./package.json",
      "./custom-elements.json": "./custom-elements.json",
-     ${[moduleExports, styleExports, packageExports].join(',')}
+     ${[moduleExports, iconShapesExports, styleExports, packageExports].join(',')}
    }`);
 
   const sideEffects = [
