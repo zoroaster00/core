@@ -53,6 +53,7 @@ const config = {
   package: {
     exports: [
       { input: './styles/module.tokens.css', output: './styles/module.tokens.min.css' },
+      './icon/shapes/*',
       './icon/icon.service.js',
       './tokens/tokens.js',
       './tokens/tokens.d.ts',
